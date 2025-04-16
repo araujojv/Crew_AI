@@ -6,9 +6,10 @@ from langchain_groq import ChatGroq
 os.environ["GROQ_API_KEY"] ='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'
 
 llm_groq = LLM(
-    model="groq/llama3-8b-8192",
+    model="groq/llama3-70b-8192",
     temperature=0.7
 )
+
 # === Agentes ===
 desenvolvedor_de_ideais = Agent(
     role='Criador de Ideias Criativas para Blog Posts e de alta qualidade em portugues ',
