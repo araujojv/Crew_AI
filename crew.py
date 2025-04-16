@@ -32,6 +32,8 @@ verbose=True
 
 
 cria_ideias = Task(
-    desc
+    description='Crie uma lista com 10 ideias diferentes para posts de blog sobre o tema {tema}. as ideias devem ser criativas, relevantes e diversificadas em foramto, com ofoc em engajar o publico-alvo',
+    agent= desenvolvedor_de_ideais,
+    expected_output= 'uma lista com 10 ideias de posts, cada uma com um titulo criativo e um breve resumo do que o conteudo abordara '
 )
 
