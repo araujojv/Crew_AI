@@ -37,3 +37,7 @@ cria_ideias = Task(
     expected_output= 'uma lista com 10 ideias de posts, cada uma com um titulo criativo e um breve resumo do que o conteudo abordara '
 )
 
+seleciona_ideias = Task(
+description='Selecione a melhor ideia da lista gerada, justificando sua escolha com base na relevância e no alinhamento com os objetivos do blog.',
+agent=desenvolvedor_de_ideais,
+expected_output='A escolha de uma ideia com uma justificativa clara e concisa sobre sua relevância e alinhamento com os objetivos do conteúdo.')
