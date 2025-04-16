@@ -41,3 +41,24 @@ seleciona_ideias = Task(
 description='Selecione a melhor ideia da lista gerada, justificando sua escolha com base na relevância e no alinhamento com os objetivos do blog.',
 agent=desenvolvedor_de_ideais,
 expected_output='A escolha de uma ideia com uma justificativa clara e concisa sobre sua relevância e alinhamento com os objetivos do conteúdo.')
+
+
+
+
+planeja_conteudo = Task(
+description='Crie um briefing detalhado para o post de blog, incluindo informações como objetivo, público-alvo, tom de voz, palavras-chave e formato.',
+agent=planejador_de_conteudo,
+expected_output='Um briefing estruturado, abordando todos os pontos importantes para guiar a criação de conteudo')
+
+
+
+escreve_post = Task(
+description='Escreva o conteúdo completo do post de blog, seguindo as diretrizes do briefing e a ideia selecionada. Certifique-se de que o post seja envolvente, bem estruturado e adequado ao público-alvo.',
+agent=escritor_do_post,
+expected_output='Um post de blog com introdução, desenvolvimento e conclusão, que seja claro, interessante alinhado com o briefing')
+
+
+revisa_post = Task(
+description='Revise o post de blog, corrigindo erros gramaticais e de pontuação, além de melhorar a fluidez do texto. Assegure que o post esteja alinhado com o tom e objetivo definidos no briefing.',
+agent=revisor_do_post,
+expected_output='O post revisado, sem erros gramaticais e com boa fluidez, pronto para ser publicado')
